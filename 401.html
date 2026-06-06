@@ -49,7 +49,7 @@ a:hover { color: #f0c96a !important; }
 /* Get a quote и остальные w-button */
 .w-button {
   background-color: transparent !important;
-  border: none !important;
+  border: 1px solid #c9a84c !important;
   outline: none !important;
   color: #c9a84c !important;
   font-family: Chakrapetch, Arial, sans-serif !important;
@@ -59,21 +59,16 @@ a:hover { color: #f0c96a !important; }
   text-transform: uppercase !important;
   padding: 16px 40px !important;
   position: relative !important;
-  transition: color 0.3s ease !important;
-  box-shadow: inset 0 0 0 1px #c9a84c55 !important;
+  transition: background 0.25s ease, color 0.25s ease !important;
+  box-shadow: none !important;
 }
 .w-button::before {
   content: "" !important;
-  position: absolute !important;
-  inset: 0 !important;
-  background: linear-gradient(135deg, #c9a84c22 0%, transparent 60%) !important;
-  opacity: 0 !important;
-  transition: opacity 0.3s ease !important;
+  display: none !important;
 }
 .w-button:hover {
-  color: #f0c96a !important;
-  box-shadow: inset 0 0 0 1px #c9a84c !important;
-  background: linear-gradient(135deg, #c9a84c18 0%, #b8922a0a 100%) !important;
+  background-color: #c9a84c !important;
+  color: #0d0d0d !important;
 }
 /* Form submit */
 .fda-form-button-wrap {
@@ -158,6 +153,48 @@ svg path[stroke="#FF4D24"], svg [stroke="#ff4d24"] { stroke: #c9a84c !important;
 
 /* ── Selection ── */
 ::selection { background: #c9a84c; color: #0d0d0d; }
+
+/* ── Button text & arrows ── */
+.fda-button-v1 .fda-button-text, .fda-button-v2 .fda-button-text { color: #c9a84c !important; }
+.fda-button-v1:hover .fda-button-text, .fda-button-v2:hover .fda-button-text { color: #0d0d0d !important; }
+.fda-button-v1 img, .fda-button-v2 img {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(42%) saturate(500%) hue-rotate(5deg) brightness(90%) contrast(90%) !important;
+}
+.fda-button-v1:hover img, .fda-button-v2:hover img { filter: brightness(0) invert(0) !important; }
+
+/* ── CTA Submit button ── */
+.fda-full-button-wrapper { width: 100% !important; position: relative !important; margin-top: 1.5rem !important; }
+.fda-full-button-wrapper .fda-form-submit-button {
+  position: absolute !important; inset: 0 !important; opacity: 0 !important;
+  cursor: pointer !important; z-index: 2 !important; width: 100% !important;
+}
+.fda-full-button-wrapper .fda-button-v2 {
+  display: flex !important; align-items: center !important; justify-content: center !important;
+  width: 100% !important; padding: 18px 0 !important; background: transparent !important;
+  border: 1px solid #c9a84c !important; color: #c9a84c !important;
+  font-family: Chakrapetch, Arial, sans-serif !important; font-size: 0.9rem !important;
+  font-weight: 600 !important; letter-spacing: 3px !important; text-transform: uppercase !important;
+  text-decoration: none !important; transition: all 0.3s ease !important;
+}
+.fda-full-button-wrapper .fda-button-v2 .fda-button-text { color: #c9a84c !important; }
+.fda-full-button-wrapper:hover .fda-button-v2 { background: #c9a84c !important; }
+.fda-full-button-wrapper:hover .fda-button-v2 .fda-button-text { color: #0d0d0d !important; }
+
+/* ── CTA car image dark overlay ── */
+.fda-cta { position: relative !important; isolation: isolate !important; }
+.fda-cta::before {
+  content: "" !important; position: absolute !important; inset: 0 !important;
+  background: linear-gradient(135deg, rgba(5,4,2,0.5) 0%, rgba(30,22,5,0.4) 60%, rgba(201,168,76,0.06) 100%) !important;
+  mix-blend-mode: multiply !important; z-index: 0 !important; pointer-events: none !important;
+}
+.fda-cta > * { position: relative !important; z-index: 1 !important; }
+
+/* ── Pricing white background fix ── */
+.fda-pricing-v2-card, .fda-pricing-v3-card, .fda-pricing-v1-card,
+.fda-chart-top-tag, .fda-chart-row, .fda-pricing-chart-rows,
+.fda-pricing-chart, .fda-service-v2-card { background-color: #111 !important; color: #e8d5a3 !important; }
+.fda-chart-left-col { background-color: #0d0d0d !important; }
+.fda-toggle-wrap, .fda-pricing-toggle { background-color: #1a1a1a !important; }
 </style><style id="gold-image-filter">
 /* ── SVG иконки: оранжевый → золото ── */
 img[src*=".svg"]:not([src*="navbar-logo"]):not([src*="facebook"]):not([src*="linkedin"]):not([src*="twitter"]):not([src*="instagram"]):not([src*="client-image"]) {
