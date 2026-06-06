@@ -1,4 +1,4 @@
-﻿html {
+html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-family: sans-serif;
@@ -4205,7 +4205,7 @@ blockquote {
 }
 
 .fda-about-v1-overlay {
-  background-color: var(--reddish-orange);
+  background-color: #0d0d0d99 !important;
   position: absolute;
   inset: 0% 0% 0% auto;
 }
@@ -5404,7 +5404,7 @@ blockquote {
 .fda-team-ticker-wrapper {
   grid-column-gap: 1.875rem;
   grid-row-gap: 1.875rem;
-  background-color: var(--reddish-orange);
+  background-color: #111 !important;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -5485,7 +5485,7 @@ blockquote {
 .fda-about-v3-left-card-wrapper {
   grid-column-gap: 4.375rem;
   grid-row-gap: 4.375rem;
-  background-color: var(--reddish-orange);
+  background-color: #111 !important;
   flex-flow: column;
   flex: 1;
   justify-content: space-between;
@@ -5698,7 +5698,7 @@ blockquote {
   z-index: 1;
   grid-column-gap: 1.25rem;
   grid-row-gap: 1.25rem;
-  background-color: var(--reddish-orange);
+  background-color: #111 !important;
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
