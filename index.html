@@ -45,12 +45,18 @@ a:hover { color: #f0c96a !important; }
 .fda-button-v1 .fda-button-text,
 .fda-button-v2 .fda-button-text,
 .fda-button-v3-main .fda-button-text { color: #c9a84c !important; }
+.fda-button-v1 img, .fda-button-v2 img, .fda-button-v3-main img {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(42%) saturate(500%) hue-rotate(5deg) brightness(90%) contrast(90%) !important;
+}
 .fda-button-v1:hover, .fda-button-v2:hover {
   background-color: #c9a84c !important;
   color: #0d0d0d !important;
 }
 .fda-button-v1:hover .fda-button-text,
 .fda-button-v2:hover .fda-button-text { color: #0d0d0d !important; }
+.fda-button-v1:hover img, .fda-button-v2:hover img {
+  filter: brightness(0) !important;
+}
 /* Get a quote и остальные w-button */
 .w-button {
   background-color: transparent !important;
