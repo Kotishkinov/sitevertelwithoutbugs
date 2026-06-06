@@ -5314,7 +5314,8 @@ blockquote {
 }
 
 .fda-faq-card-left-text {
-  background-color: #f5f5f5;
+  background-color: #1a1a1a;
+  border: 1px solid #c9a84c44;
   border-radius: 100%;
   justify-content: center;
   align-items: center;
