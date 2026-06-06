@@ -210,7 +210,7 @@ img[src*="banner"], img[src*="hero"] {
 }
 
 /* ── Feature и work фото — золотой тон ── */
-img[src*="feature"]:not([src*="home-feature-work"]), img[src*="work"]:not([src*="workers-image"]):not([src*="home-feature-work"]), img[src*="expert"],
+img[src*="feature"]:not([src*="home-feature-work"]):not([src*="about-feature"]), img[src*="work"]:not([src*="workers-image"]):not([src*="home-feature-work"]), img[src*="expert"],
 img[src*="service-one-service"], img[src*="service-three"],
 img[src*="counter"], img[src*="packages"] {
   filter: sepia(35%) hue-rotate(32deg) saturate(90%) brightness(0.85) !important;
@@ -218,7 +218,7 @@ img[src*="counter"], img[src*="packages"] {
 
 /* ── Testimonial фото — нейтральные ── */
 /* ── About team/work photos — без зелёного фильтра ── */
-img[src*="service-two-image"] { filter: none !important; }
+img[src*="service-two-image"], img[src*="about-feature-image"], img[src*="about-banner-image"] { filter: none !important; }
 img[src*="workers-image"], img[src*="home-feature-work"] { filter: none !important; }
 
 img[src*="testimonial"], img[src*="client"] {
