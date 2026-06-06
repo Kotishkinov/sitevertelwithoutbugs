@@ -134,6 +134,18 @@ a:hover { color: #f0c96a !important; }
 .fda-text-overlay { background-color: #0d0d0de6 !important; }
 .fda-white-background { background-color: #111 !important; }
 .fda-cta-box { background-color: #c9a84c0d !important; border: 1px solid #c9a84c33 !important; }
+/* Чёрно-золотой тон фото машины в CTA секции */
+#upgrade-your-ride { position: relative !important; isolation: isolate !important; }
+#upgrade-your-ride::before {
+  content: '' !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(135deg, rgba(5,4,2,0.82) 0%, rgba(30,22,5,0.72) 60%, rgba(201,168,76,0.08) 100%) !important;
+  mix-blend-mode: multiply !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+#upgrade-your-ride > * { position: relative !important; z-index: 1 !important; }
 
 /* ── Forms ── */
 .fda-input-v1, .fda-input-field, .fda-cta-input-field {
