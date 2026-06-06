@@ -317,11 +317,32 @@ input[type="submit"].w-button:hover,
 .fda-button-v1 .fda-button-text, .fda-button-v2 .fda-button-text { color: #c9a84c !important; }
 .fda-button-v1:hover, .fda-button-v2:hover { background-color: #c9a84c !important; color: #0d0d0d !important; }
 .fda-button-v1:hover .fda-button-text, .fda-button-v2:hover .fda-button-text { color: #0d0d0d !important; }
-/* Скрыть дублирующую кнопку-анимацию */
-.fda-full-button-wrapper .fda-button-v2 { display: none !important; }
-/* Кнопка формы на всю ширину */
+/* Submit button layout */
 .fda-form-button-wrapper { margin-top: 2rem !important; }
-.fda-full-button-wrapper { width: 100% !important; }
+.fda-full-button-wrapper { width: 100% !important; position: relative !important; }
+/* Скрыть input submit, поверх него — визуальная кнопка */
+.fda-full-button-wrapper .fda-form-submit-button { position: absolute !important; inset: 0 !important; opacity: 0 !important; cursor: pointer !important; z-index: 2 !important; width: 100% !important; }
+/* Визуальная кнопка — полная ширина */
+.fda-full-button-wrapper .fda-button-v2 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  padding: 16px 0 !important;
+  background: transparent !important;
+  border: 1px solid #c9a84c !important;
+  color: #c9a84c !important;
+  font-family: Chakrapetch, Arial, sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+.fda-full-button-wrapper:hover .fda-button-v2 { background: #c9a84c !important; color: #0d0d0d !important; }
+.fda-full-button-wrapper:hover .fda-button-v2 .fda-button-text { color: #0d0d0d !important; }
+.fda-full-button-wrapper .fda-button-v2 .fda-button-text { color: #c9a84c !important; }
 
 /* Form grid spacing */
 .fda-contact-form-v2-wrapper {
