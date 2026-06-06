@@ -179,7 +179,7 @@ svg path[stroke="#FF4D24"], svg [stroke="#ff4d24"] { stroke: #c9a84c !important;
 .fda-full-button-wrapper:hover .fda-button-v2 .fda-button-text { color: #0d0d0d !important; }
 
 /* ── CTA car image dark overlay ── */
-.fda-cta { position: relative !important; isolation: isolate !important; }
+.fda-cta { position: relative !important; isolation: isolate !important; background-color: #0d0d0d !important; }
 .fda-cta::before {
   content: "" !important; position: absolute !important; inset: 0 !important;
   background: linear-gradient(135deg, rgba(5,4,2,0.5) 0%, rgba(30,22,5,0.4) 60%, rgba(201,168,76,0.06) 100%) !important;
@@ -210,7 +210,7 @@ img[src*="banner"], img[src*="hero"] {
 }
 
 /* ── Feature и work фото — золотой тон ── */
-img[src*="feature"], img[src*="work"], img[src*="expert"],
+img[src*="feature"], img[src*="work"]:not([src*="workers-image"]), img[src*="expert"],
 img[src*="service-one-service"], img[src*="service-two"], img[src*="service-three"],
 img[src*="counter"], img[src*="packages"] {
   filter: sepia(35%) hue-rotate(32deg) saturate(90%) brightness(0.85) !important;
@@ -220,6 +220,9 @@ img[src*="counter"], img[src*="packages"] {
 img[src*="testimonial"], img[src*="client"] {
   filter: sepia(10%) brightness(0.9) contrast(1.05) !important;
 }
+
+/* ── Workers team photos — без зелёного фильтра ── */
+img[src*="workers-image"] { filter: none !important; }
 
 /* ── Процент, кавычки и прочие декоративные большие элементы ── */
 .fda-big-text, .fda-text-style-h1.fda-service-number-text-color {
