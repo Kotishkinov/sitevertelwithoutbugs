@@ -258,6 +258,27 @@ svg path[stroke="#FF4D24"], svg [stroke="#ff4d24"] { stroke: #c9a84c !important;
 .fda-pricing-chart, .fda-service-v2-card { background-color: #111 !important; color: #e8d5a3 !important; }
 .fda-chart-left-col { background-color: #0d0d0d !important; }
 .fda-toggle-wrap, .fda-pricing-toggle { background-color: #1a1a1a !important; }
+/* ── Nav dropdown: solid dark background, no image bleed-through ── */
+.fda-navbar-menu-dropdown,
+.fda-navbar-menu-dropdown.w--open,
+.fda-navbar-menu-dropdown.fda-overflow-hidden.w--open {
+  background-color: #0d0d0d !important;
+  background-image: none !important;
+  border: 1px solid #c9a84c22 !important;
+  border-bottom: 2px solid #c9a84c !important;
+  box-shadow: 0 8px 32px #000000cc !important;
+  overflow: hidden !important;
+}
+.fda-navbar-menu-dropdown .fda-nav-menu-link {
+  color: #e8d5a3 !important;
+}
+.fda-navbar-menu-dropdown .fda-nav-menu-link:hover {
+  color: #c9a84c !important;
+  background-color: #1a1a1a !important;
+}
+.fda-nav-menu-link.w--current {
+  color: #c9a84c !important;
+}
 </style><style id="gold-image-filter">
 /* ── SVG иконки: оранжевый → золото ── */
 img[src*=".svg"]:not([src*="navbar-logo"]):not([src*="facebook"]):not([src*="linkedin"]):not([src*="twitter"]):not([src*="instagram"]):not([src*="client-image"]) {
