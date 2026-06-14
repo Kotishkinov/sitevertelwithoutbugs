@@ -263,7 +263,11 @@ svg path[stroke="#FF4D24"], svg [stroke="#ff4d24"] { stroke: #c9a84c !important;
 .fda-testimonial-wrapper { justify-content: center !important; }
 .fda-testimonial-middle-wrapper { align-items: center !important; text-align: center !important; max-width: 860px !important; }
 .fda-testimonial-heading { font-size: clamp(1.2rem, 2vw, 1.7rem) !important; line-height: 1.5 !important; }
-.fda-testimonial-author-wrapper { display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: center !important; gap: 1rem !important; }
+.fda-testimonial-author-wrapper,
+.w-slide .fda-testimonial-author-wrapper,
+.w-slider-mask .fda-testimonial-author-wrapper { display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: center !important; gap: 1rem !important; }
+.fda-testimonial-author-image { display: flex !important; align-items: center !important; justify-content: center !important; flex-shrink: 0 !important; }
+.fda-testimonial-author-image > div { width: 64px !important; min-width: 64px !important; height: 64px !important; min-height: 64px !important; border-radius: 50% !important; aspect-ratio: 1 / 1 !important; }
 .fda-testimonial-subtext { display: flex; justify-content: center; }
 /* ── Testimonial arrows: left and right sides, vertically centered ── */
 .left-arrow.w-slider-arrow-left { width: 80px !important; inset: 0 auto 0 0 !important; display: flex !important; align-items: center !important; justify-content: center !important; }
